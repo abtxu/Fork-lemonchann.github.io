@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AHK实现窗口快捷切换 | The Philosophy of Depth</title>
+<link rel="shortcut icon" href="https://abtxu.github.io/favicon.ico?v=1610755067373">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://abtxu.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="AHK实现窗口快捷切换 | The Philosophy of Depth - Atom Feed" href="https://abtxu.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Win 窗口切换快捷键最优解 - 知乎
+原生的切换（alt + tab），最好一点是
+
+快按直接切换窗口
+慢按可以在调出之后，不换键就能实现选择。
+所以能够在一个键位实现多种功能
+但缺点是必须一直按住alt
+
+我试图做到：
+
+如果是两个窗口..." />
+    <meta name="keywords" content="AHK,Toolkit" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://abtxu.github.io">
+  <img class="avatar" src="https://abtxu.github.io/images/avatar.png?v=1610755067373" alt="">
+  </a>
+  <h1 class="site-title">
+    The Philosophy of Depth
+  </h1>
+  <p class="site-description">
+    Going deep into a shallowing world
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://abtxu.github.io" class="menu">
+          2021技术学习日志
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              AHK实现窗口快捷切换
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-16
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://abtxu.github.io/tag/93WadXcsZ/" class="post-tag">
+                  # AHK
+                </a>
+              
+                <a href="https://abtxu.github.io/tag/d3LpXd6V-/" class="post-tag">
+                  # Toolkit
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><a href="https://zhuanlan.zhihu.com/p/128744443">Win 窗口切换快捷键最优解 - 知乎</a></p>
+<p>原生的切换（alt + tab），最好一点是</p>
+<ul>
+<li>快按直接切换窗口</li>
+<li>慢按可以在调出之后，不换键就能实现选择。<br>
+所以能够在一个键位实现多种功能<br>
+但缺点是必须一直按住alt</li>
+</ul>
+<p>我试图做到：</p>
+<ol>
+<li>如果是两个窗口，那么实现一键切换，即一键实现Alt + Tab</li>
+<li>如果是多个窗口，那么尽量减少窗口选择过程，并且不需要一直按住键盘，即一键实现Ctrl + Alt + Tab</li>
+<li>尽量使用方便并且不干扰现有按键的那些键位，如右侧的Alt或者Ctrl，PrintScreen，左侧的Capslock等</li>
+<li>最好是左手按键，省得右手在鼠标和键盘之间切换</li>
+</ol>
+<p>那么最佳选项应该是Capslock：</p>
+<ul>
+<li>按一次实现切换窗口</li>
+<li>按两次实现窗口可选择<br>
+当然两者会互相干扰，一次的情况要慢一些触发，为两次的情况留下空间。</li>
+</ul>
+<h3 id="实现目标2">实现目标2：</h3>
+<p>Alt+Space实现窗口选择<br>
+<a href="https://github.com/guija/sprung/">guija/sprung: A windows application to rapidly switch between multiple windows using the keyboard only</a></p>
+<p>一键实现窗口选择，界面好看一些，但没法关闭<br>
+<a href="https://github.com/Run1e/WindowSwitcher">Run1e/WindowSwitcher: Fast Window switcher for Windows using a Fuzzy matching algorithm.</a></p>
+<h3 id="在窗口多于两个的情况下">在窗口多于两个的情况下：</h3>
+<p>在同一个屏幕打开并列的多个窗口的时候很适合用这个，因为它精确地标出了各个窗口的对应按键。但如果只有两个的话，还不如一键切换。</p>
+<p><a href="https://github.com/JochenBaier/fastwindowswitcher">JochenBaier/fastwindowswitcher: A fast window switcher for Windows using the keyboard.</a></p>
+<h3 id="目前最佳选项">目前最佳选项</h3>
+<p>分别用两个按键F1和F2实现以上两个目标，我修改为Capslock和右侧alt<br>
+<a href="https://stackoverflow.com/questions/35971452/what-is-the-right-way-to-send-alt-tab-in-ahk">autohotkey - What is the right way to send Alt + Tab in Ahk? - Stack Overflow</a></p>
+<p>参考：<br>
+<a href="https://www.autohotkey.com/docs/Hotkeys.htm#AltTabDetail">Hotkeys - Definition &amp; Usage | AutoHotkey</a></p>
+<p>还未尝试：</p>
+<p>不支持win7<br>
+<a href="https://github.com/microsoft/PowerToys">microsoft/PowerToys: Windows system utilities to maximize productivity</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%AE%9E%E7%8E%B0%E7%9B%AE%E6%A0%872">实现目标2：</a></li>
+<li><a href="#%E5%9C%A8%E7%AA%97%E5%8F%A3%E5%A4%9A%E4%BA%8E%E4%B8%A4%E4%B8%AA%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B">在窗口多于两个的情况下：</a></li>
+<li><a href="#%E7%9B%AE%E5%89%8D%E6%9C%80%E4%BD%B3%E9%80%89%E9%A1%B9">目前最佳选项</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://abtxu.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://abtxu.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

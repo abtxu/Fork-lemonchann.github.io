@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://abtxu.github.io</id>
     <title>The Philosophy of Depth</title>
-    <updated>2021-01-09T08:42:10.879Z</updated>
+    <updated>2021-01-15T23:57:56.692Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://abtxu.github.io"/>
     <link rel="self" href="https://abtxu.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://abtxu.github.io/images/avatar.png</logo>
     <icon>https://abtxu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, The Philosophy of Depth</rights>
+    <entry>
+        <title type="html"><![CDATA[AHK实现窗口快捷切换]]></title>
+        <id>https://abtxu.github.io/post/ahk-shi-xian-chuang-kou-kuai-jie-qie-huan/</id>
+        <link href="https://abtxu.github.io/post/ahk-shi-xian-chuang-kou-kuai-jie-qie-huan/">
+        </link>
+        <updated>2021-01-15T23:56:34.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/128744443">Win 窗口切换快捷键最优解 - 知乎</a></p>
+<p>原生的切换（alt + tab），最好一点是</p>
+<ul>
+<li>快按直接切换窗口</li>
+<li>慢按可以在调出之后，不换键就能实现选择。<br>
+所以能够在一个键位实现多种功能<br>
+但缺点是必须一直按住alt</li>
+</ul>
+<p>我试图做到：</p>
+<ol>
+<li>如果是两个窗口，那么实现一键切换，即一键实现Alt + Tab</li>
+<li>如果是多个窗口，那么尽量减少窗口选择过程，并且不需要一直按住键盘，即一键实现Ctrl + Alt + Tab</li>
+<li>尽量使用方便并且不干扰现有按键的那些键位，如右侧的Alt或者Ctrl，PrintScreen，左侧的Capslock等</li>
+<li>最好是左手按键，省得右手在鼠标和键盘之间切换</li>
+</ol>
+<p>那么最佳选项应该是Capslock：</p>
+<ul>
+<li>按一次实现切换窗口</li>
+<li>按两次实现窗口可选择<br>
+当然两者会互相干扰，一次的情况要慢一些触发，为两次的情况留下空间。</li>
+</ul>
+<h3 id="实现目标2">实现目标2：</h3>
+<p>Alt+Space实现窗口选择<br>
+<a href="https://github.com/guija/sprung/">guija/sprung: A windows application to rapidly switch between multiple windows using the keyboard only</a></p>
+<p>一键实现窗口选择，界面好看一些，但没法关闭<br>
+<a href="https://github.com/Run1e/WindowSwitcher">Run1e/WindowSwitcher: Fast Window switcher for Windows using a Fuzzy matching algorithm.</a></p>
+<h3 id="在窗口多于两个的情况下">在窗口多于两个的情况下：</h3>
+<p>在同一个屏幕打开并列的多个窗口的时候很适合用这个，因为它精确地标出了各个窗口的对应按键。但如果只有两个的话，还不如一键切换。</p>
+<p><a href="https://github.com/JochenBaier/fastwindowswitcher">JochenBaier/fastwindowswitcher: A fast window switcher for Windows using the keyboard.</a></p>
+<h3 id="目前最佳选项">目前最佳选项</h3>
+<p>分别用两个按键F1和F2实现以上两个目标，我修改为Capslock和右侧alt<br>
+<a href="https://stackoverflow.com/questions/35971452/what-is-the-right-way-to-send-alt-tab-in-ahk">autohotkey - What is the right way to send Alt + Tab in Ahk? - Stack Overflow</a></p>
+<p>参考：<br>
+<a href="https://www.autohotkey.com/docs/Hotkeys.htm#AltTabDetail">Hotkeys - Definition &amp; Usage | AutoHotkey</a></p>
+<p>还未尝试：</p>
+<p>不支持win7<br>
+<a href="https://github.com/microsoft/PowerToys">microsoft/PowerToys: Windows system utilities to maximize productivity</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://abtxu.github.io/post/hello-gridea/</id>
