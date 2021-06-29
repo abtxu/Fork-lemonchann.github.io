@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://abtxu.github.io</id>
     <title>The Philosophy of Depth</title>
-    <updated>2021-01-15T23:57:56.692Z</updated>
+    <updated>2021-06-29T02:15:33.518Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://abtxu.github.io"/>
     <link rel="self" href="https://abtxu.github.io/atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://abtxu.github.io/images/avatar.png</logo>
     <icon>https://abtxu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, The Philosophy of Depth</rights>
+    <entry>
+        <title type="html"><![CDATA[拉姆齐 真理与 成功]]></title>
+        <id>https://abtxu.github.io/post/Ramsey_Success_Truth/</id>
+        <link href="https://abtxu.github.io/post/Ramsey_Success_Truth/">
+        </link>
+        <updated>2021-06-29T02:03:07.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://www.3-16am.co.uk/articles/truth-success-and-frank-ramsey">truth, success and frank ramsey - 3:16</a></p>
+<p><strong>3:AM:</strong> As an epistemologist do you think knowledge is elusive because the term is <strong>empty</strong>, and would that be an approach developed out of your work on Ramsey’s principle, (which I’ll ask about in a minute)?</p>
+<p><strong>PE:</strong></p>
+<ul>
+<li>知识概念有意义，但并不能通过条件来界定</li>
+</ul>
+<p>I do not take knowledge to be elusive or empty. On the contrary, it seems to me to designate a bona fide natural kind, although not one which is easy to pin down. Unlike contextualists, I take expressions such as “knowledge” or “knows” to be invariant across contexts (although I do not deny a certain amount of <strong>context sensitivity in our epistemic terms</strong>). In the current jargon I am an insensitive invariantist. Unlike eliminativists about knowledge, among whom I count a number of <a href="https://www.3ammagazine.com/3am//questioning-willusionism/">experimental philosophers</a>, I do not think it is an empty term. I do not think, however, that knowledge can be defined through a set of necessary and sufficient conditions. This I take to be one of the lessons of Gettierology.</p>
+<ul>
+<li>但即便真理严格意义上不能定义，我们还是能够通过功能的方式来给出一些界定，也就是通过知识和其他观念的关系，例如 justification，evidence，reliability，or safety. 而这些观念我们可以给出解释和理论。也就是说，我们不应该问知识是什么，而应该问证据主义还是可靠主义，或者内在主义和外在主义的真理观是对的。
+<ul>
+<li>即便严格意义上不能界定，还是可以通过所相关的领域来界定，我们关于某一个论题的知识有多种多样的渠道。</li>
+</ul>
+</li>
+</ul>
+<p>This does not mean that there is nothing to say about knowledge and that epistemologists have to pack up and leave. Although knowledge cannot be defined in the strict sense of this term, we can still characterize it functionally, through its relationships with other notions, such as those of justification, evidence, reliability, or safety, and we can try to give explanations and theories about these notions. Thus it makes sense to ask whether internalism or externalism about knowledge are correct, whether reliabilism or evidentialism are correct, and to work out the best versions of these.</p>
+<ul>
+<li>另一方面，关于何为知识，我们还是能够从实际科学那里学到很多，例如认知科学，生态学，尤其是发展心理学。而这些问题不能通过关于知识的一般理论得到，而是必须通过其领域之内的知识来讨论知识是什么（不论是自然的，科学，道德的还是美学的）。即便没有完全在所有领域完全适用的真理阐述（account），还是可以期待这些真理阐述之间有一些共同点。真理的观念也是如此，真理观在不同领域有不同的界定方式，但还是存在一个功能主义的核心。
+<ul>
+<li>没有整体理论不代表没有理论；功能性的理论往往较为固定。</li>
+</ul>
+</li>
+</ul>
+<p>I also take it that , although the analysis of knowledge is basically a conceptual and a priori matter, we can learn a lot (although not everything) from cognitive science, ethology and especially from developmental psychology about what knowledge is. These issues cannot be dealt with only at the level of an account of knowledge in general, but have to be dealt with about particular kinds of knowledge depending on its sources (perceptual, inferential, testimonial, a priori) and of its domain (natural, scientific, moral, aesthetic). Perhaps there is no single account which works fully for all domains, but I take it that they have a number of traits in common (in this respect the shape of the issues is pretty much like for truth, which can vary across domains, but keeps a functionalist core)</p>
+<ul>
+<li>非定义，非还原，而是功能性的定义：知识在可靠的过程之中扮演一定的角色。</li>
+</ul>
+<p>Ramsey’s ideas about knowledge, which were in many ways pioneering, are perfectly consistent with this functionalist account.</p>
+<ul>
+<li>Ramsey defined knowledge as based on a reliable process.
+<ul>
+<li>For him it was not a definition, but a functional characterization.</li>
+</ul>
+</li>
+<li>He held that <strong>belief is a disposition to act</strong>, and that the <strong>content of a belief is constituted by the difference it makes to the success of actions</strong> <strong>based on it</strong>, given the desires of the agent. This is Ramsey’s principle, and the basis of “success semantics”. It does not mean that truth is defined by utility, nor that a belief’s content consists its success conditions, independently of holistic conditions and of the interpretation of desires ( I myself think of this as a revision of Davidson’s method of interpretation) .</li>
+<li>The same thing holds for knowledge. Knowledge is the kind of state that, together with desires, leads to the success of actions. This is not a reductive definition either, but a functional one. It states that knowledge has a certain role in practical reasoning.</li>
+<li>So I agree with those philosophers who take knowledge to make a difference to action and to be a necessary premise in practical reasoning. Nevertheless, I disagree with those, among whom many pragmatists, who take this to entail that knowledge is to be defined as what makes a difference to the success of our actions. Ramsey’s principle does not entail pragmatism as a reductive view about knowledge and truth.</li>
+</ul>
+<p>Knowledge, belief, truth and action stand together in close relationships, although they cannot be defined independently from each other. They are not elusive for that.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AHK实现窗口快捷切换]]></title>
         <id>https://abtxu.github.io/post/ahk-shi-xian-chuang-kou-kuai-jie-qie-huan/</id>
